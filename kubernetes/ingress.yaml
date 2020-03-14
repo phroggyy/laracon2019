@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: laracon2019
+  labels:
+    app.kubernetes.io/name: laravel-app
+spec:
+  rules:
+    - host: laravel.test
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: laracon2019
+              servicePort: http

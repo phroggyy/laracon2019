@@ -162,7 +162,10 @@ class Preloader
         __DIR__ . '/app/Http/Middleware',
         __DIR__ . '/app/Http/Controllers'
     )
-    ->ignorePaths('Illuminate/Foundation/Testing')
+    ->ignorePaths(
+        'Illuminate/Foundation/Testing',
+        'Illuminate/Testing'
+    )
     ->ignoreClasses(
         \Illuminate\Filesystem\Cache::class,
         \Illuminate\Log\LogManager::class,
