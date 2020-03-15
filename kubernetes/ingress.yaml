@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: laracon2019
   labels:
-    app.kubernetes.io/name: laravel-app
+    app.kubernetes.io/name: laracon2019
 spec:
   rules:
     - host: laravel.test

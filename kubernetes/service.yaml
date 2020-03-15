@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: laracon2019
   labels:
-    app.kubernetes.io/name: laravel-app
+    app.kubernetes.io/name: laracon2019
 spec:
   type: ClusterIP
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       targetPort: http
   selector:
-    app.kubernetes.io/name: laravel-app
+    app.kubernetes.io/name: laracon2019
